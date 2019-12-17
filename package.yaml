@@ -1,0 +1,18 @@
+name: least-error
+
+defaults: galenhuntington/hpack-defaults@a556eee82583e8bade64a1e8008faa833748c247
+
+ghc-options: -O2 -rtsopts
+
+source-dirs:
+   - .
+
+executables:
+   demo:
+      main: demo.hs
+
+dependencies:
+   - vector
+   - deepseq
+   - mono-traversable
+
