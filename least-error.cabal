@@ -1,13 +1,15 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.34.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f0270d6822985fd39395a9432aecc7cbbbcc9e6a0cc6586954cc86ee9819c700
+-- hash: b0bd42f434d60707a6cd558e443753db92c4a74012230b7eac1c372ce8444b69
 
 name:           least-error
 version:        0.0.0
+author:         Galen Huntington
+maintainer:     Galen Huntington
 build-type:     Simple
 
 executable demo
@@ -19,14 +21,13 @@ executable demo
       Paths_least_error
   hs-source-dirs:
       ./.
-  default-extensions: ApplicativeDo BangPatterns BinaryLiterals BlockArguments ConstraintKinds DataKinds DefaultSignatures DeriveAnyClass DeriveDataTypeable DeriveGeneric DeriveLift DeriveTraversable DerivingStrategies DerivingVia EmptyCase ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTSyntax GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiWayIf NamedFieldPuns NoImplicitPrelude NondecreasingIndentation NoStarIsType NumDecimals NumericUnderscores OverloadedLabels PatternGuards PatternSynonyms QuantifiedConstraints QuasiQuotes RankNTypes RecordWildCards RoleAnnotations ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators UnicodeSyntax ViewPatterns
-  ghc-options: -Wall -Wredundant-constraints -Wno-name-shadowing -Wno-missing-signatures -Wno-unused-do-bind -Wno-orphans -Wcompat -pgmF hpre -F -O2 -rtsopts
+  default-extensions: ApplicativeDo BangPatterns BinaryLiterals BlockArguments ConstraintKinds DataKinds DefaultSignatures DeriveAnyClass DeriveDataTypeable DeriveGeneric DeriveLift DeriveTraversable DerivingStrategies DerivingVia EmptyCase EmptyDataDeriving ExistentialQuantification FlexibleContexts FlexibleInstances FunctionalDependencies GADTSyntax GeneralizedNewtypeDeriving InstanceSigs LambdaCase MultiWayIf NamedFieldPuns NoImplicitPrelude NondecreasingIndentation NoStarIsType NumDecimals NumericUnderscores OverloadedLabels PatternGuards PatternSynonyms QuantifiedConstraints QuasiQuotes RankNTypes RecordWildCards RoleAnnotations ScopedTypeVariables StandaloneDeriving TupleSections TypeApplications TypeFamilies TypeFamilyDependencies TypeOperators UnicodeSyntax ViewPatterns
+  ghc-options: -Wall -Wredundant-constraints -Wno-name-shadowing -Wno-missing-signatures -Wno-unused-do-bind -Wno-orphans -Wcompat -Wmissing-deriving-strategies -pgmF hpre -F -O2 -rtsopts
   build-tool-depends:
       hpre:hpre ==1.*
   build-depends:
       base
     , base-prelude
-    , containers
     , deepseq
     , mono-traversable
     , vector
