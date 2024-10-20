@@ -1,7 +1,7 @@
 name: least-error
 author: Galen Huntington
 
-defaults: galenhuntington/hpack-defaults@f14c1cdf9475cb4f76db482074cea745a9f5f695
+defaults: galenhuntington/hpack-defaults@27874600a9673795a129b2f7523451793a39aaf4
 
 ghc-options: -O2 -rtsopts
 
